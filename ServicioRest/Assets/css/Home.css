@@ -1,0 +1,149 @@
+body{
+	background-color: var(--neutral-color);
+	/*background-image: url("../img/back2.jpg");
+	background-image: linear-gradient(#bbdefb, #1de9b6);
+	background-size: 100% 100%;*/
+	/*background-image: url("../img/textu.png");*/
+}
+
+.center{
+	text-align: center;
+}
+
+.icontext{
+	font-size: 6em;
+}
+
+@media screen and (max-width: 450px) {
+	.icontext{
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.icontext{
+		font-size: 3em;
+	}
+}
+
+.textsizereg{
+	font-size: 12px;
+}
+
+.bloqueado{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	cursor: not-allowed !important;
+}
+
+.margin-bottom-cero {
+	margin-bottom: 0px !important;
+}
+
+.closeboton {
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+
+/*Correcciones*/
+
+.modal.bottom-sheet{
+	max-height: 100% !important;
+}
+
+.selectclean{
+	padding-left: 3rem;
+    border: none;
+}
+
+.margin-top-montado{
+	margin-top: -48px;
+}
+
+.salir{
+
+}
+
+.salir:hover{
+	cursor: pointer;
+}
+
+.zero_agregados{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.cuadro_overlow{
+	overflow-x: auto;
+	/* min-width: 200px; */
+	max-width: 100%;
+}
+
+.editicons i{
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+th a{
+	color: black !important;
+}
+
+th a:hover{
+	color: green !important;
+}
+
+td i{
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+td{
+	padding-left: 2% !important;
+}
+
+th{
+	padding-left: 2% !important;
+}
+
+.labelfake{
+	font-size: 1rem;
+    color: #9e9e9e;
+}
+
+.checkTitle{
+	color: black;
+    text-decoration: underline;
+}
+
+.mar-l-20{
+	margin-left: 20px;
+}
+
+.zero-padding{
+	padding: 0px !important;
+}
+
+.zero-margin{
+	margin: 0px !important;
+}
+
+.zero-border{
+	border: 0px !important;
+}
+
+.bsp{
+	margin-left: 20px;
+}
+
+.bsp2{
+	margin-left: 40px;
+}
+
+.bsp3{
+	margin-left: 60px;
+}

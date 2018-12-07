@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activities.EditAdActivity">
+
+    <View
+        android:id="@+id/focus_thief"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ad_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="left"
+                    android:alpha="1"
+                    android:text="Editar Anuncio"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ad_tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp">
+
+                    <EditText
+                        android:id="@+id/in_ad_tittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ad_tittle"
+                        android:inputType="text"
+                        android:textColorHighlight="@color/colorPrimary"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12dp"
+                    android:text="Estado"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"/>
+
+                <Spinner
+                    android:id="@+id/in_ad_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    >
+
+                </Spinner>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ad_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp">
+
+                    <EditText
+                        android:id="@+id/in_ad_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ad_description"
+
+                        android:inputType="textMultiLine"
+                        android:textColorHighlight="@color/colorPrimary"
+
+                        android:lines="8"
+                        android:minLines="6"
+                        android:gravity="top|left"
+                        android:maxLines="10"
+                        android:scrollbars="vertical"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ad_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp">
+
+                    <EditText
+                        android:id="@+id/in_ad_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ad_ref"
+                        android:inputType="text"
+                        android:textColorHighlight="@color/colorPrimary"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:text="Mapa"
+                        android:backgroundTint="@color/colorAccent"
+                        android:onClick="showmap"
+                        />
+
+                    <TextView
+                        android:id="@+id/coor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="No ingresado"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_reg_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/camara"
+                    android:onClick="loadimage"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Buscar Imagen"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimaryText"
+                    android:gravity="center"
+                    android:textSize="16dip"
+                    android:layout_marginBottom="24dp"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_reg_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp"
+                    android:onClick="buttonAdd"
+                    android:text="Editar"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorAccent"
+                    />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_reg_del"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp"
+                    android:onClick="delAd"
+                    android:text="Eliminar"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorRed"
+                    />
+
+                <TextView android:id="@+id/link_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tx_cancelar"
+                    android:onClick="linkCancelBtnAd"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorLink"
+                    android:gravity="center"
+                    android:textSize="16dip"
+                    android:layout_marginBottom="24dp"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

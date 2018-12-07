@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On    # Turn on the rewriting engine
+#RewriteRule ^user/([a-zA-Z_-]*)$ user.php?dni=$1 [NC,L]
+RewriteRule api/ api/service.php
+RewriteRule Lab/ Lab/index.php

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "215787953247",
+    "firebase_url": "https://petlover-82be0.firebaseio.com",
+    "project_id": "petlover-82be0",
+    "storage_bucket": "petlover-82be0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215787953247:android:0019c308f551335e",
+        "android_client_info": {
+          "package_name": "pe.edu.upc.disenio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215787953247-2abovlo4q3tu6lpj1ipnagprcmfhop18.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.edu.upc.disenio",
+            "certificate_hash": "b65c9a7ebf098a67203f8397e7afd32303cd894a"
+          }
+        },
+        {
+          "client_id": "215787953247-sohlt52oj5glubekacrn05pj2jqe1p1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASAWLJ4h1VFKAeEX3WW4d_xjxd9MmJyGw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215787953247-sohlt52oj5glubekacrn05pj2jqe1p1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

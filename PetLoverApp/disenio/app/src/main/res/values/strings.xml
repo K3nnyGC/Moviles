@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">PetLover</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_tab">tab</string>
+
+    <string name="host">http://petlover.pe.hu</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Estas online en: %1$d</string>
+    <string name="tx_registrame">Registrame</string>
+
+    <string name="tx_nombre">Nombre</string>
+    <string name="tx_apellido">Apellido</string>
+    <string name="tx_dni">DNI</string>
+    <string name="tx_correo">Correo</string>
+    <string name="tx_password">Password</string>
+    <string name="tx_repite_pw">Repite el password</string>
+    <string name="tx_telefono">Teléfono</string>
+    <string name="tx_registrar">Registrar</string>
+    <string name="tx_cancelar">Cancelar</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="tab_text_1">   Inicio   </string>
+    <string name="tab_text_2">Mis Anuncios</string>
+    <string name="tab_text_3">  Mensajes  </string>
+
+    <string name="ad_create">Crear Anuncio</string>
+    <string name="ad_tittle">Titulo</string>
+
+    <string-array name="status_list">
+        <item>Perdido</item>
+        <item>
+            Encontrado
+        </item>
+    </string-array>
+
+    <string name="ad_description">Descripcion</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ad_address">Direccion</string>
+    <string name="ad_ref">Referencia</string>
+
+    <string name="tx_out">Salir</string>
+    <string name="tx_profile">Perfil</string>
+    <string name="tx_store">Mensajes Guardados</string>
+
+    <string name="tx_edit_reg">Editar Perfil</string>
+    <string name="tx_edit_ok">Actualizar</string>
+
+    <string name="tx_create_msg">Crear Mensaje</string>
+    <string name="tx_create_texto">Mensaje</string>
+
+    <string name="tx_create_ok"> Enviar </string>
+    <string name="tx_create_cancel">Cancelar</string>
+
+    <string name="tx_show_title">Titulo</string>
+    <string name="tx_show_body">La mascota fue vista por la av la marina cdr 21</string>
+    <string name="title_activity_show_position">Map</string>
+    <string name="title_activity_show_store">ShowStoreActivity</string>
+
+</resources>
